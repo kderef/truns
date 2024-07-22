@@ -1,0 +1,18 @@
+[package]
+name = "truns"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+
+[dependencies]
+thiserror = "1.0.63"
+
+# formats
+rust-ini = "0.21.0"
+yaml-rust = "0.4"
+serde_json = "1.0.120"
+toml = "0.8.15"
